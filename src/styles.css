@@ -1,14 +1,14 @@
 body{
-    font-family: Arial, sans-serif;
+    font-family: Georgia, sans-serif;
     font-size: 12px;
-    background-color: #010101;
+    background-color: rgb(119, 46, 46);
     text-align: center;
 }
 h1 {
     flex-basis :100%;
     text-align : center;
     text-decoration : underline;
-    color: #a80f72;
+    color: #fd5f89;
     margin-top :2%;
     font-size: 4vw;
 }
@@ -17,11 +17,11 @@ a {
     text-align : center;
     margin-top : 2%;
     margin-bottom : 2%;
-    color: #f38ac4;
+    color: #33ffc9;
     font-size: 1vw;
 }
 a:hover{
-    color: #f36a75;
+    color: #33edff;
     text-decoration: underline;
 }
 
@@ -31,20 +31,20 @@ a:hover{
     margin-bot :10%;
 }
 canvas{
-    outline: 1px solid #0f124b;
-    border: 3mm ridge rgb(70, 0, 136);
+    outline: 1px solid #0f2d4b;
+    border: 3mm ridge rgb(110, 67, 196);
 }
 #joueur1{
-    color: #00d595;
+    color: #d2cb2e;
 }
 #joueur2{
-    color: #fc2276;
+    color: #33ffc9;
 }
 #scores1{
-    color: #00d595;
+    color: #d2cb2e;
 }
 #scores2{
-    color: #fc2276;
+    color: #33ffc9;
 }
 #scores{
     margin-top :5%;
