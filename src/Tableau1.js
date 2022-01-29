@@ -51,7 +51,7 @@ class Tableau1 extends Phaser.Scene{
          */
         this.balle = this.physics.add.sprite(this.width / 2, this.height / 2, 'cercleimg').setOrigin(0, 0);
         this.balle.setDisplaySize(20, 20);
-        this.balle.body.setBounce(1.1, 1.1);
+        this.balle.body.setBounce(1, 1);
         this.balle.setVelocityX(450);
         this.balle.setVelocityY(Phaser.Math.Between(350, 450));
         this.balle.setMaxVelocity(500);
@@ -65,7 +65,6 @@ class Tableau1 extends Phaser.Scene{
 
         this.physics.add.collider(this.balle, this.gauche);
         this.physics.add.collider(this.balle, this.droite, function () {
-            console.log("touche droit")
             me.rebond(me.droite);
         });
 
@@ -82,7 +81,7 @@ class Tableau1 extends Phaser.Scene{
             this.textplayer2.setText('Player 2 = ' + this.scoreplayer2);
         }
 
-        this.joueurGauche = new Joueur('Joueur 1','joueurGauche')
+        this.joueurGauche = new Joueur('joueur 1','joueurGauche')
         this.joueurDroite = new Joueur('joueur 2','joueurDroite')
         console.log(this.joueurGauche)
 
